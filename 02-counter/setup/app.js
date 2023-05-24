@@ -14,14 +14,18 @@ buttons.forEach(function (btn) {
         count = 0;
        }
        
-       if (count > 0) {
+       if (count > 0 && count % 2 === 0) {
+        num.style.color = 'blue';
+       } else if (count > 0 && count % 2 !== 0) {
         num.style.color = 'green';
-       } else if (count < 0) {
+       } else if (count < 0 && count % 2 === 0) {
+        num.style.color = 'orange';
+       } else if (count < 0 && count % 2 !== 0) {
         num.style.color = 'red';
        } else {
-        num.style.color = 'black'
+        num.style.color = 'black';
        }
-       
+
        num.textContent = count;
     });
 });
