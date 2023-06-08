@@ -35,9 +35,10 @@ const author = document.getElementById('author');
 const job = document.getElementById('job');
 const info = document.getElementById('info');
 
+console.log(author);
 const prev = document.querySelector('.prev-btn');
 const next = document.querySelector('.next-btn');
-
+console.log(prev);
 let currentItem = 0;
 
 window.addEventListener('DOMContentLoaded', function () {
